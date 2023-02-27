@@ -1,107 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hbo Max</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body{
+            margin: 0; 
+            text-align: center;
+            background: url(background.svg);
+            background-repeat: no-repeat;   
+            background-size: cover;
+            background-position: 30% 3%;
+            background-color: rgba(0, 0, 0, 2);
+            width:100%;
+            grid-auto-flow: 1fr;         
+        }
         .container{
             display: grid;
-            grid-auto-flow: row;
-            margin-left: 94px;
+            grid-auto-flow: column;
+            grid-auto-columns: 1fr;
+        }
+        .header{
+            display: inline-block;
+            text-align: left;
+        }
+        .header ul{
+            text-align:right;
+        }
+        #navegacao img{
+            margin-left: 55px;
+        }
+        #option{
+            margin-top: 20px;
+        }
+        #search{
+            margin-top: 25px;
+        }
+        #logo{
             text-align: center;
         }
-        #header img{
-            width: 250px;
-            height: 57px;         
-            margin-top: 55px;
+        #logo img{
+            width: 160px;
+            margin-top: 30px;
+        }
+
+        li{
+            display: inline-block;
+            margin-right: 80px;
+        }
+        a{
+            font-family: 'Inter';
+            font-style: normal;
+            font-size: 29px;
+            line-height: 35px;
+            text-decoration: none;
+            color: white;
         }
         #header2 h2{
-            font-family: 'Times New Roman';
-            font-style: normal;
+            font-family: 'Inter';
+            font-style: Bold;
             font-weight: 700;
             font-size: 40px;
             line-height: 62px;
+            color: white;
+            margin-top: 100px;
         }
         #header2 p{
-            font-family: 'Times New Roman';
-            font-style: normal;
+            font-family: 'Inter';
+            font-style: 'Regular';
             font-weight: 450;
             font-size: 25px;
             line-height: 33px;
+            color: white;
         }
-        label{
-            font-family: 'Times New Roman';
-            font-style: normal;
-            font-weight: 450;
-            font-size: 25px;
+        .inform{
+            display: grid;
+            justify-content: center;
+        }
+        .inform label{
+            display: grid;
+            text-align: left;
+            font-family: 'Inter';
+            font-style: 'Regular';
+            font-weight: 500;
+            font-size: 29px;
             line-height: 38px;
-            color: #000000;
+            color: white;
+            margin-left: 10px;
         }
-        input{
-            width: 400px;
-            height: 35px;
+        .inform input{
+            border-radius: 25px;
+            border: 0;
+            color: #FFFFFF;
+            padding: 20px 250px 15px 40px;
+            background-color: rgba(127, 127, 127, 0.75);
         }
-        button{
+        input::placeholder{
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 25px;
+            width: 200%;
+            color: white;
+            
+        }
+        #button input{
             margin-top: 40px;
-            padding: 10px 35px 10px 35px;
-            background: #EFEFEF;
-            border: 1px solid #000000;
+            padding: 10px 50px 10px 50px;
             border-radius: 5px;
+            background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+            border: 1px solid black;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 25px;
+            cursor: pointer;
+            color: black;
+            font-size: 25px;
         }
         #basebord p{
-            font-family: 'Times New Roman';
+            font-family: 'Inter';
             font-style: normal;
             font-weight: 450;
             font-size: 25px;
             line-height: 33px;
             margin-bottom: 52px;
+            color: white;
         }
         #basebord a{
-            background: #EFEFEF;
-            border: 1px solid #000000;
-            border-radius: 5px;
             padding: 10px 35px 10px 35px;
             text-decoration: none;
             color: black;
-            font-family: 'Times New Roman';
+            font-family: 'Inter';
             font-style: normal;
             font-weight: 500;
             font-size: 25px;
             line-height: 38px;
+            background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+            border: 1px solid black;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 25px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div id="header">
-            <img src="header.svg">
-        </div>    
-        <div id="header2">
-            <h2>Entrar</h2>
-            <p>Você tem uma conta HBO Max?</p>
+    <div class="container" id="cabeça">
+        <div class="header" id="navegacao">
+            <img id="option" src="option.svg">
+            <img id="search" src="search.svg">
+        </div>
+        <div class="header" id="logo">
+            <img src="hbo-max.svg">
+        </div>
+
+        <div class="header" id="Entrar">
+            <ul>
+                <li><p><a href="">Assinar</a></p></li>
+                <li><a href="">Entrar</a></li>
+        </ul>
         </div>
     </div>
-    <div class="container">
-        <div id="form">
-            <form>
-            <p><label>E-mail</label></p>
-            <input type="email">
-            <p><label>Senha</label></p>
-            <input type="text"><br>
-            <button type="submit">Entrar</button>
-            </form>
-        </div>
+    <div class="container">  
+            <div id="header2">
+                <h2>Entrar</h2>
+                <p>Você tem uma conta HBO Max?</p>
+            </div>
     </div>
     <div class="container">
-        <div id="basebord">
-            <p>
-                Você acessa a HBO Max por um provedor de TV,<br> 
-                de internet ou celular?
-            </p>
-            <a href="">Entrar como provedor</a> 
-        </div>
+            <div id="form">
+                <form>
+                    <div class="inform">
+                        <label>E-mail</label><br>
+                        <input type="email" placeholder="email@dnc.group"><br>
+                    </div>
+                    <div class="inform">
+                        <label>Senha</label><br>
+                        <input type="text" placeholder="*******"><br>
+                    </div>
+                    <div id="button">
+                        <input type="submit" value="Entrar">
+                    </div>             
+                </form>
+            </div>
+    </div>
+    <div class="container">
+            <div id="basebord">
+                <p>
+                    Você acessa a HBO Max por um provedor<br>  
+                    de TV, de internet ou celular?
+                </p>
+                <a href="">Entrar como provedor</a> 
+            </div>
     </div>
 </body>
 </html>
