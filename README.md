@@ -36,7 +36,8 @@ Para visualizar e interagir com a réplica da página da HBO Max, siga os passos
 ## Imagens
 
 ![Page 1](https://github.com/odiogorodriigues/HboMax/assets/125144716/4e304c04-8c5b-49ca-8f4d-a01fd6729ae9)
-![Page 2](https://github.com/odiogorodriigues/HboMax/assets/125144716/ae90a4b9-e877-4770-bf34-c89a829fa58e)
+<div align="center"> <img src="https://github.com/odiogorodriigues/HboMax/assets/125144716/ae90a4b9-e877-4770-bf34-c89a829fa58e" />
+</div>
 
 ## Autor
 
